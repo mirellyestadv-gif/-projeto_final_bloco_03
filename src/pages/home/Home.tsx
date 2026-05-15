@@ -1,18 +1,28 @@
 function Home() {
   return (
-    <>
-      <div className="flex justify-center bg-emerald-100 py-20">
-        <div className="container text-center">
-          <h2 className="text-5xl font-bold text-emerald-800">
-            Bem-vindo à FarmaMed 
-          </h2>
+    <div className="w-full min-h-screen flex flex-col items-center justify-center bg-emerald-100 p-6">
 
-          <p className="text-xl mt-4 text-emerald-700">
-            Controle completo de categorias farmacêuticas
-          </p>
-        </div>
+      {/* TEXTO */}
+      <div className="text-center mb-8">
+
+        <h1 className="text-6xl font-bold text-emerald-800">
+          Bem-vindo à FarmaMed
+        </h1>
+
+        <p className="text-xl mt-4 text-emerald-700">
+          Controle completo de categorias farmacêuticas
+        </p>
+
       </div>
-    </>
+
+      {/* IMAGEM COM ANIMAÇÃO */}
+      <img
+        src="/logo.png"
+        alt="FarmaMed"
+        className="w-[350px] rounded-3xl shadow-xl animate-[float_4s_ease-in-out_infinite]"
+      />
+
+    </div>
   )
 }
 
