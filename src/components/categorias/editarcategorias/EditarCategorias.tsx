@@ -23,6 +23,8 @@ function EditarCategorias({ categoria }: EditarCategoriasProps) {
 
       alert('Categoria atualizada com sucesso!')
 
+      window.location.reload()
+
     } catch (error) {
       alert('Erro ao atualizar categoria!')
     }
@@ -42,7 +44,7 @@ function EditarCategorias({ categoria }: EditarCategoriasProps) {
 
         <button
           onClick={atualizarCategoria}
-          className="rounded-lg text-white bg-yellow-500 hover:bg-yellow-700 py-2"
+          className="rounded-lg text-white bg-cyan-500 hover:bg-cyan-700 py-2"
         >
           Editar
         </button>

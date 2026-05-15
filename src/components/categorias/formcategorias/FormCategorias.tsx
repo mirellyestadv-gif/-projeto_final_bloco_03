@@ -27,6 +27,9 @@ function FormCategorias() {
       await cadastrar('/categoria', categoria, setCategoria)
 
       alert('Categoria cadastrada com sucesso!')
+        
+
+       window.location.reload()
 
       setCategoria({
         id: 0,

@@ -13,7 +13,7 @@ function DeletarCategorias({ id }: DeletarCategoriasProps) {
       await deletar(`/categoria/${id}`)
 
       alert('Categoria apagada com sucesso!')
-
+        window.location.reload()
     } catch (error) {
       alert('Erro ao apagar categoria!')
     }
