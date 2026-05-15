@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Navbar() {
   return (
     <>
@@ -8,8 +10,8 @@ function Navbar() {
           </h1>
 
           <div className="flex gap-4">
-            <p>Home</p>
-            <p>Categorias</p>
+            <Link to="/">Home</Link>
+            <Link to="/categorias">Categorias</Link>
           </div>
         </div>
       </div>
